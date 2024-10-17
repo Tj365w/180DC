@@ -1,0 +1,268 @@
+body{
+    background-color: #f9f9f9;
+}
+.top{
+   text-decoration: none;
+    margin-right: 10px;
+    position: relative;
+    width: max-content;
+    color: black;
+}
+.top:hover{
+    color:white;
+}
+.top:after{
+   content: '';
+   position: absolute;
+   width: 100%;
+   height:1px;
+   bottom: 0;
+   left: 0;
+   background: #76a855;
+   transition: height 0.5s ease;
+   z-index: -1;
+   opacity: 0;
+}
+.top:hover::after{
+       height: 100%;
+       opacity: 1;
+}
+.top2{
+    position: relative;
+    margin-right: 100px;
+    text-decoration: none;
+    color: white;
+}
+.JU{
+    position: absolute;
+left: 0;
+top: -120px; /* change this value to match the height of the header */
+height: 0;
+width: 0;
+}
+.text{
+    text-align: left;
+    font-size: 15px;
+    direction: rtl;
+}
+.heading{
+    font-weight: bold;
+    font-size: 20px;
+    text-align: left;
+}
+.bh{
+    font-weight: bold;
+    font-size: 20px;
+}
+.bt{
+    font-size: 15px;
+
+}
+.linkb{
+    padding-top:    20px;
+    padding-bottom: 20px;
+    padding-right:  20px;
+    padding-left:   20px;
+    font-weight: 600;
+    position: relative;
+    background-color: #f9f9f9;
+    border: none;
+}
+.linkb:hover{
+    opacity: 1;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1),
+    -10px -10px 10px white;
+
+
+}
+.linkb:active{
+    box-shadow: 12px 12px 12px  rgba(0, 0, 0, 0.1) inset,
+    -10px -10px 10px white inset;
+
+}
+.box{
+    display: inline-block;
+    width: 30%;
+    margin-left: 40px;
+   
+}
+.intro-box{
+    display: inline-block;
+    width: 400px;
+    vertical-align: top;
+    height: 254px;
+    margin-left: 200px;
+   
+    
+}
+.i-beside{
+    display: inline-block;
+    width: 50%;
+    height: 255px;
+    margin-left: 50px;
+}
+.btimg{
+    margin-right: 40px;
+    border: none;
+}
+.smlink{
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    transition: width 1s, height 1s;
+
+}
+.smlink:hover{
+    height: 40px;
+    width: 40px;
+  
+}
+.bt2{
+    display: inline-block;
+    width: 80%;
+    background: #242424
+    ;
+    z-index: -1;
+}
+.complogo{
+    display: inline-block;
+    height: 70px;
+    width: 150px;
+margin-bottom: 20px;
+margin-right: 60px;
+
+}
+.complogo2{
+    display: inline-block;
+    height: 70px;
+    width: 150px;
+    flex: 1;
+margin-bottom: 20px;
+margin-right: 60px;
+
+}
+.mainlogo{
+    height: 400px;
+    width: 400px;
+
+}
+.mainlogo:hover~body {
+    background-color: black;
+    cursor: pointer;
+}
+.imgdiv{
+    margin-left: 5%;
+    margin-right: 5%;
+    display:inline-block;
+}
+.tooltip{
+        display: inline-block;
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        position: absolute;
+        bottom:0px;
+        right: 10px;
+        opacity: 1;
+}
+.linkb:hover.tooltip{
+    opacity: 1;
+}
+.complogo:hover{
+    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1),
+    -10px -10px 10px white;
+}
+.complogo2:hover{
+    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1),
+    -10px -10px 10px white;
+}
+.sa{
+    display: flex;
+    gap: 30px;
+}
+path { transition: fill .5s ease; }
+.logon{
+    height: 20px;
+    width: 20px;
+    padding: 11px;
+    position: relative;
+    border-radius: 20px;
+    fill: black;
+    background: white;
+    transition: fill 15ms;
+}
+.logon:hover{
+   background-color: var(--accent-color);
+   fill: white;
+}
+.sa a::before{
+       content:attr(data-social);
+       position: absolute;
+       text-decoration: none;
+       background: var(--accent-color);
+       color: white;
+       border-radius: 100px;
+       padding: 0.5em 1em;
+       transform: translate(-30px,-50px)  rotate(25deg);
+       opacity: 0;
+       transition: 200ms ease;
+       pointer-events: none;
+
+}
+.sa a:hover::before{
+    opacity: 1;
+    transform: translate(-30px,-50px)  rotate(0deg);
+}
+.sa a::after{
+    content:"";
+    position: absolute;
+    height: 0px;
+    width: 0px;
+    border-left: 8px  solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 10px solid var(--accent-color);
+    transform: translate(-25px,-15px) rotate(25deg);
+    opacity: 0;
+    transition: 200ms ease;
+    pointer-events: none;
+}
+.sa a:hover::after{
+    opacity: 1;
+    transform: translate(-25px,-15px) rotate(0deg);
+}
+.loc{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    fill: white;
+    background: white;
+    padding: 5px;
+    position: relative;
+    margin-left: 2px;
+}
+
+.loc2{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    padding: 5px;
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: opacity 0.3s;
+    opacity: 0;
+    z-index: 2;
+}
+.loc2:hover{
+    opacity: 1;
+}
+.locdiv{
+ position: relative;
+}
+.img-wrapper {
+    display: inline-block;
+    background: #000;
+  }
